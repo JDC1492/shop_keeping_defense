@@ -1,0 +1,21 @@
+{
+  "name": "vulnlab-e2e",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Playwright + TypeScript regression suite for the vulnlab deliberately vulnerable app",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test --project=api",
+    "test:browser": "playwright test --project=browser",
+    "test:a11y": "playwright test --project=a11y",
+    "list": "playwright test --list",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
